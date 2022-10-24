@@ -159,11 +159,10 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.jwvec{
-  top: 1500px;
-  position: absolute;
+.jwstdet{
+  position: relative;
   width: 100%;
-  scale: 30%;
-  left: -500px;
+  scale: 50%;
+  left: 400px;
 }
 
