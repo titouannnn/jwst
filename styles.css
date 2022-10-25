@@ -75,8 +75,7 @@ body {
   width: 100%;
   color: antiquewhite;
   width: 22ch;
-  animation: typing 3s steps(40), blink 0.75s step-end 5;
-  white-space: nowrap;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;  white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
 }
@@ -96,19 +95,20 @@ body {
 /* The typing effect */
 @keyframes typing {
   from {
-    width: 0;
+    width: 0
   }
+  
 }
-
+    
 @keyframes blink {
   50% {
-    border-color: transparent;
+    border-color: transparent
   }
 }
 
 #page2 {
   width: 100%;
-  height: 1500px;
+  height: 1800px;
   background-color: black;
 }
 
@@ -128,41 +128,21 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.logonasa {
-  position: relative;
-  width: 100%;
-  scale: 50%;
-  left: 400px;
-}
-.texte1p2{
-  margin-top: -500px;
-  position: absolute;
-  margin-left: 5%;
-  font-size: 45px;
-  font-family: "aeonik";
-  font-style: bold;
-  width: 50%;
-  color: antiquewhite;
-  white-space: nowrap;
-  overflow: hidden;
-  
- 
-}
 
-
-
-#jw{
-  background: -webkit-linear-gradient(-70deg, #a2facf 0%, #64acff 100%);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
 .jwstdet{
-  position: relative;
+  position: absolute;
+  top: auto;
   width: 100%;
   scale: 50%;
-  left: 400px;
+  left: 5%;
 }
 
+.t2p2 {
+  font-size: 70px;
+  color: rgb(255, 255, 255);
+  margin-top: 55%;
+  font-family: 'aeonikbold','Raleway', sans-serif;
+  text-align: center;
+  
+}
