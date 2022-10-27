@@ -161,3 +161,33 @@ body {
   margin-top: 10%;
   width: 100%;
 }
+
+.missions{
+  
+  font-size: 70px;
+  color: rgb(255, 255, 255);
+  font-family: 'aeonikbold','Raleway', sans-serif;
+  text-align: center;
+}
+
+#page3{
+  width: 100%;
+  height: 2200px;
+  background-color: black;
+}
+
+.missionDroite{
+  margin-top: 10%;
+  font-size: 35px;
+  width: 45%;
+  color: rgb(255, 255, 255);
+  font-family: 'aeonikbold','Raleway', sans-serif;
+  margin-left: 5%;
+}
+
+.imageGauche{
+  top: -1000px;
+  scale: 40%;
+  width: 100%;
+  margin-left: 15%;
+}
