@@ -162,7 +162,7 @@ body {
   width: 100%;
 }
 
-.missions{
+#missions{
   
   font-size: 70px;
   color: rgb(255, 255, 255);
@@ -177,7 +177,7 @@ body {
 }
 
 .missionDroite{
-  margin-top: 10%;
+  margin-top: 30%;
   font-size: 35px;
   width: 45%;
   color: rgb(255, 255, 255);
@@ -186,8 +186,9 @@ body {
 }
 
 .imageGauche{
-  top: -1000px;
-  scale: 40%;
+  top: -700px;
+  scale: 60%;
   width: 100%;
   margin-left: 15%;
+  border-radius: 5%;
 }
