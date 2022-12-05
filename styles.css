@@ -10,6 +10,24 @@
 body {
   background-color: rgb(0, 0, 0);
 }
+
+::-webkit-scrollbar-track /*les 3 élements qui suivent servent pour la scrollbar */
+{
+	border-radius: 10px;
+	background-color: #101010;
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #0a0909;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: rgb(250, 250, 250);
+}
 .logo {
   font-family: "nasa";
   margin-left: 15px;
@@ -32,15 +50,67 @@ body {
   color: rgb(254, 254, 254);
 }
 .navbar .nav-links {
-  margin-top: 20px;
+  /*margin-top: 20px; */
   display: flex;
   font-size: x-large;
+  overflow: hidden;
+
 }
 .navbar .nav-links ul {
   display: flex;
 }
 .navbar .nav-links ul li {
   margin: 0 25px;
+}
+
+/* responsive du menu */
+.navbar .menu-hamburger{
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  width: 60px;
+  display: none;
+}
+
+
+
+@media screen and (max-width: 900px) {
+  .logo {
+   display: none;
+  }
+  .navbar .menu-hamburger {
+    display: block;
+    
+  }
+  .navbar {
+    height: 100vh;
+  }
+  .nav-links {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(244, 235, 235, 0.166);
+    backdrop-filter: blur(8px);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+    transition: all 0.5s ease;
+  }
+  .mobile-menu {
+    margin-left: 0;
+  }
+  .nav-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar .nav-links ul li {
+    margin: 25px 0;
+    font-size: 1.5em;
+  }
 }
 .imageacceuil {
   position: relative;
@@ -52,12 +122,12 @@ body {
 }
 
 #titre1 {
-  top: 300px;
+  top: 18vw;
   z-index: 2;
   position: absolute;
   margin-left: 15%;
   font-weight: bold;
-  font-size: 100px;
+  font-size: 7vw;
   font-family: 'aeonikbold','Raleway', sans-serif;
   width: 100%;
   color: antiquewhite;
@@ -66,11 +136,11 @@ body {
 }
 
 #soustitre1 {
-  top: 400px;
+  top: 25vw;
   z-index: 2;
   position: absolute;
   margin-left: 15%;
-  font-size: 50px;
+  font-size: 3vw;
   font-family: "aeonik";
   font-style: bold;
   width: 100%;
@@ -116,11 +186,11 @@ body {
 
 .titre2 {
   font-weight: bold;
-  font-size: 70px;
+  font-size: 5vw;
   font-family: "aeonik";
   width: 100%;
   color: rgb(255, 255, 255);
-  margin-top: 100px;
+  margin-top: 7vw;
   font-family: 'aeonikbold';
   text-align: center;
   background: -webkit-linear-gradient(-70deg, #a2facf 0%, #64acff 100%);
@@ -135,13 +205,14 @@ body {
 .jwstdet{
   position: absolute;
   top: auto;
-  width: 100%;
+  max-width: 100%;
   scale: 50%;
-  left: 5%;
+  display: flex;
+  align-items: center;
 }
 
 #t2p2 {
-  font-size: 70px;
+  font-size: 5vw;
   color: rgb(255, 255, 255);
   margin-top: 55%;
   font-family: 'aeonikbold','Raleway', sans-serif;
@@ -154,7 +225,7 @@ body {
     text-align: center;
     font-family: 'aeonik', sans-serif;
     color: white;
-    font-size: 30px;
+    font-size: 2.5vw;
     margin-left: 5%;
     margin-right: 5%;
 }   
@@ -166,7 +237,7 @@ body {
 
 #missions{
   margin-top: 10%;
-  font-size: 70px;
+  font-size: 5vw;
   color: rgb(255, 255, 255);
   font-family: 'aeonikbold','Raleway', sans-serif;
   text-align: center;
@@ -270,23 +341,27 @@ img {vertical-align: middle;}
 
 
 .graph{
-  margin-top: 10%;
+  margin-left: 15%;
+  margin-top: 15%;
+  display: flex;
+  align-items: center;
   text-align: center;
+  width: 80%;
 }
 
 .p1p3 {
-  margin-top: 5%;
+  margin-top: 10%;
   text-align: center;
   font-family: 'aeonik', sans-serif;
   color: white;
-  font-size: 25px;
+  font-size: 2.5vw;
   margin-left: 5%;
   margin-right: 5%;
 }   
 
 #gallerie{ /* Gallerie le tire */
   margin-top: 15%;
-  font-size: 70px;
+  font-size: 5vw;
   color: rgb(255, 255, 255);
   font-family: 'aeonikbold','Raleway', sans-serif;
   text-align: center;

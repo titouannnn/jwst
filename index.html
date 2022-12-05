@@ -15,9 +15,6 @@
 
     <title>James Webb 🔭</title>
   </head>
-
-  
-
   <nav class="navbar">
     <a href="https://www.nasa.gov" class="logo">NASA</a>
     <div class="nav-links">
@@ -27,6 +24,7 @@
         <li><a href="#gallerie">Gallerie</a></li>
       </ul>
     </div>
+    <img src="./images/menu.png" alt="menu hamburger" class="menu-hamburger">
   </nav>
 
   <img
@@ -144,8 +142,15 @@
           slides[slideIndex-1].style.display = "block";  
           dots[slideIndex-1].className += " active";
         }
-
-        
+        </script>
+        <script>
+          /* script pour le menu hamburger, a chaque click sur l'icone le menu apparait ou disparait */
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
         </script>
 
     
