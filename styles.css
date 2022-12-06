@@ -14,13 +14,13 @@ body {
 ::-webkit-scrollbar-track /*les 3 élements qui suivent servent pour la scrollbar */
 {
 	border-radius: 10px;
-	background-color: #101010;
+	background-color: #000000;
 }
 
 ::-webkit-scrollbar
 {
 	width: 12px;
-	background-color: #0a0909;
+	background-color: #000000;
 }
 
 ::-webkit-scrollbar-thumb
@@ -439,7 +439,6 @@ img {vertical-align: middle;}
   position: static;
   margin: auto;
   z-index: 2;
-  
 }
 .content2{
   position: relative;
