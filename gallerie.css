@@ -1,0 +1,163 @@
+/* Gallerie */
+.container {
+    margin-top: 10%;
+    width: 100%;
+    display: grid;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: center;
+    scrollbar-width: none;
+    grid-auto-flow: dense;
+    grid-template:
+      "1fr 1fr 1fr 1fr 1fr" 33.33vh
+      "1fr 1fr 1fr 1fr 1fr" 33.33vh
+      "1fr 1fr 1fr 1fr 1fr" 33.33vh;
+  }
+  
+  .container .box {
+    position: relative;
+    background: #ccc;
+  }
+  .container .box.a {
+    grid-row: span 2;
+    display: flex;
+  }
+  .container .box.b,
+  .container .box.f,
+  .container .box.h,
+  .container .box.j {
+    grid-column: span 2;
+  }
+  .container .box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  @media (max-width: 991px) {
+    .container {
+      grid-template:
+        "1fr 1fr 1fr" 250px
+        "1fr 1fr 1fr" 250px
+        "1fr 1fr 1fr" 250px
+        "1fr 1fr 1fr" 250px
+        "1fr 1fr 1fr" 250px;
+    }
+  }
+  @media (max-width: 768px) {
+    .container {
+      grid-template:
+        "1fr 1fr" 200px
+        "1fr 1fr" 200px
+        "1fr 1fr" 200px
+        "1fr 1fr" 200px
+        "1fr 1fr" 200px
+        "1fr 1fr" 200px
+        "1fr 1fr" 200px;
+    }
+  }
+  .container .box.h {
+    grid-column: span 1;
+  }
+  
+  .content1{
+    opacity: 0;
+    color: antiquewhite;
+    font-family: 'aeonik', sans-serif;
+    font-size: x-large;
+    position: static;
+    margin: auto;
+    z-index: 2;
+  }
+  .content2{
+    position: relative;
+    opacity: 0;
+    color: antiquewhite;
+    font-family: 'aeonik', sans-serif;
+    font-size: x-large;
+    text-align: inherit;
+    margin-top: auto;
+  }
+  .content3{
+    opacity: 0;
+    position: relative;
+    color: antiquewhite;
+    font-family: 'aeonik', sans-serif;
+    font-size: x-large;
+    text-align: center;
+    margin-top: auto;
+    vertical-align: center;
+  }
+  .content4{
+    position: relative;
+    opacity: 0;
+    color: antiquewhite;
+    font-family: 'aeonik', sans-serif;
+    font-size: x-large;
+    text-align: center;
+    margin-top: auto;
+  }
+  .content5{
+    position: relative;
+    opacity: 0;
+    color: antiquewhite;
+    font-family: 'aeonik', sans-serif;
+    font-size: x-large;
+    text-align: center;
+    margin-top: auto;
+  }
+  .content6{
+    position: relative;
+    opacity: 0;
+    color: antiquewhite;
+    font-family: 'aeonik', sans-serif;
+    font-size: x-large;
+    text-align: center;
+    margin-top: auto;
+  }
+  .content7{
+    position: relative;
+    opacity: 0;
+    color: antiquewhite;
+    font-family: 'aeonik', sans-serif;
+    font-size: x-large;
+    text-align: center;
+    margin-top: auto;
+  }
+  .content8{
+    position: relative;
+    opacity: 0;
+    color: antiquewhite;
+    font-family: 'aeonik', sans-serif;
+    font-size: x-large;
+    text-align: center;
+    margin-top: auto;
+  }
+  .box.a:hover .content1{
+    opacity: 1;
+  }
+  
+  .box.b:hover .content2{
+    opacity: 1;
+  }
+  .box.c:hover .content3{
+    opacity: 1;
+  }
+  
+  .box.d:hover .content4{
+    opacity: 1;
+  }.box.e:hover .content5{
+    opacity: 1;
+  }
+  
+  .box.i:hover .content8{
+    opacity: 1;
+  }
+  .box.g:hover .content6{
+    opacity: 1;
+  }
+  .box.h:hover .content7{
+    opacity: 1;
+  }
