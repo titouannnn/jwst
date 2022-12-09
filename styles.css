@@ -276,3 +276,25 @@ img {vertical-align: middle;}
   text-align: center;
 }
 
+/* pour la version imprimable */
+@media print {
+  /* Masquer les éléments qui ne seront pas imprimés */
+  .navbar{
+    display: none;
+  }
+  /* fond d'écran en blanc pour consommer moins d'encre */
+  body {
+    background-color: white;
+    /* police en noir pour plus de visibilité */
+    color: black;
+
+  }
+  .jwstdet{
+    display: none;
+  }
+  /* sauter une page pour que la gallerie soit sur la même page */
+  .gallerie{
+      page-break-before: always;
+      page-break-inside: avoid;
+  }
+}
