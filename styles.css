@@ -75,13 +75,14 @@ body {
 
 
 @media screen and (max-width: 900px) {
+ 
   .logo {
    display: none;
   }
   .navbar .menu-hamburger {
     display: block;
     
-  }
+  } 
   .navbar {
     height: 100vh;
   }
@@ -97,7 +98,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-left: -100%;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease; 
   }
   .mobile-menu {
     margin-left: 0;
@@ -199,13 +200,23 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-
+.ref {
+  font-family: 'aeonik', sans-serif;
+  color: white;
+  font-size: 2.5vw;
+  background: -webkit-linear-gradient(-70deg, #a2facf 0%, #64acff 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .jwstdet{
+  margin-left: 2vw;
   position: absolute;
   top: auto;
   max-width: 100%;
-  scale: 50%;
+  scale: 55%;
   display: flex;
   align-items: center;
 }
@@ -247,16 +258,19 @@ body {
 .mySlides {display: none}
 img {vertical-align: middle;}
 
-
+.gd{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
 
 .graph{
-  margin-left: 15%;
-  margin-top: 15%;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  width: 80%;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
 }
+
 
 .p1p3 {
   margin-top: 10%;
